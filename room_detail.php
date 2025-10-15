@@ -244,10 +244,13 @@ $meal_plan_features = [
        	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 
         <!-- CSS -->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
         <link rel="stylesheet" href="css/uikit.min.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" href="css/tiny-date-picker.min.css" />
-        <link rel="stylesheet" href="css/style.css" />
+        <!-- <link rel="stylesheet" href="css/tiny-date-picker.min.css" /> -->
+        <link rel="stylesheet" href="css/style.css?v=6.1" />
         <link rel="stylesheet" href="css/media-query.css" />
 
     </head>
@@ -560,18 +563,7 @@ $meal_plan_features = [
                                                 <small class="text-muted d-block">for <?= $no_of_rooms ?> room</small>
                                             </td>
                                             <td>
-                                                <a style="background-color: #bd8f03ff; color: #fff;" href="booking.php?room_id=<?= $room['id'] ?>
-                                                    &check_in=<?= urlencode($check_in) ?>
-                                                    &check_out=<?= urlencode($check_out) ?>
-                                                    &no_of_rooms=<?= (int)$no_of_rooms ?>
-                                                    &guests=<?= (int)$guests ?>
-                                                    &children=<?= (int)$children ?>
-                                                    &meal_plan=<?= $key ?>
-                                                    &room_price=<?= $price ?>
-                                                    &extra_bed_price=<?= $extra_bed_price ?>
-                                                    &child_5_12_price=<?= $child_5_12_price ?>
-                                                    &child_below_5_price=<?= $room['price_child_below_5'] ?>"
-                                                class="btn ">Select</a>
+                                                <a style="background-color: #bd8f03ff; color: #fff;" href="booking.php?room_id=<?= $room['id'] ?>&check_in=<?= urlencode($check_in) ?>&check_out=<?= urlencode($check_out) ?>&no_of_rooms=<?= (int)$no_of_rooms ?>&guests=<?= (int)$guests ?>&children=<?= (int)$children ?>&meal_plan=<?= $key ?>&room_price=<?= $price ?>&extra_bed_price=<?= $extra_bed_price ?>&child_5_12_price=<?= $child_5_12_price ?>&child_below_5_price=<?= $room['price_child_below_5'] ?>"class="btn ">Select</a>
                                             </td>
                                         </tr>
                                         <?php endif; ?>
@@ -592,67 +584,70 @@ $meal_plan_features = [
 
 							<div class="impx-hp-booking-form side-form uk-margin-bottom uk-margin-remove-top ">
 								<h6 class="uk-heading-line uk-text-center uk-light uk-text-uppercase"><span>Check Availability</span></h6>
-								<form class="">
-									<!-- <div class="uk-margin">
-										<div class="uk-form-controls">
-										    <div class="uk-inline">
-										    	<label class="uk-form-label">Email</label>
-										    	<span class="uk-form-icon" data-uk-icon="icon: mail"></span>
-										        <input class="uk-input booking-email uk-border-rounded" type="text" placeholder="your e-mail">
-										    </div>
-									    </div>
-								    </div> -->
-								    <div class="uk-margin">
-									    <div class="uk-form-controls">
-										    <div class="uk-inline">
-										    	<label class="uk-form-label">Check-in Date</label>
-										    	<span class="uk-form-icon" data-uk-icon="icon: calendar"></span>
-										        <input class="uk-input booking-arrival uk-border-rounded" type="date" name="check_in" id="check_in"
-                               value="<?= htmlspecialchars($check_in) ?>" required placeholder="m/dd/yyyy">
-										    </div>
-										</div>
-									</div>
-									<div class="uk-margin">
-									    <div class="uk-form-controls">
-										    <div class="uk-inline">
-										    	<label class="uk-form-label">Check-out Date</label>
-										    	<span class="uk-form-icon" data-uk-icon="icon: calendar"></span>
-										        <input class="uk-input booking-departure uk-border-rounded" type="date" name="check_out" id="check_out"
-                               value="<?= htmlspecialchars($check_out) ?>" placeholder="m/dd/yyyy">
-										    </div>
-									    </div>
-									</div>
-									<div class="uk-margin">
-									    <div class="uk-form-controls uk-position-relative">
-									    	<label class="uk-form-label" for="form-guest-select">No. of Adults</label>
-									    	<span class="uk-form-icon select-icon" data-uk-icon="icon: users"></span>
-								            
-											<input type="number" name="guests" min="1"
-                               value="<?= htmlspecialchars($guests) ?>" class="uk-input booking-departure uk-border-rounded" required>
-									    </div>
-									</div>
-									<div class="uk-margin">
-									    <div class="uk-form-controls uk-position-relative">
-									    	<label class="uk-form-label" for="form-guest-select">No. of Children</label>
-									    	<span class="uk-form-icon select-icon" data-uk-icon="icon: users"></span>
-								            
-											<input type="number" name="children" min="0"
-                               value="<?= htmlspecialchars($children) ?>" class="uk-input booking-departure uk-border-rounded" required>
-									    </div>
-									</div>
-									<div class="uk-margin">
-									   <div class="uk-form-controls uk-position-relative">
-									    	<label class="uk-form-label" for="form-rooms-select">Rooms</label>
-									    	<span class="uk-form-icon select-icon" data-uk-icon="icon: album"></span>
-								            <input type="number" name="no_of_rooms" min="1"
-                               value="<?= htmlspecialchars($no_of_rooms) ?>" class="uk-input booking-departure uk-border-rounded" required>
-									    </div>
-									</div>
-								    <div>
-								    	<label class="uk-form-label empty-label">&nbsp;</label>
-								        <button class="uk-button uk-width-1-1" type="submit">Check Availability</button>
-								    </div>
-								</form>
+								<form class="" method="GET" action="room_detail.php" data-room-id="<?= htmlspecialchars($room_id) ?>">
+    <!-- Hidden Room ID -->
+    <input type="hidden" name="room_id" value="<?= htmlspecialchars($room_id) ?>">
+
+    <div class="uk-margin">
+        <div class="uk-form-controls">
+            <div class="uk-inline">
+                <label class="uk-form-label">Check-in Date</label>
+                <span class="uk-form-icon" data-uk-icon="icon: calendar"></span>
+                <input class="uk-input booking-arrival uk-border-rounded" 
+                       type="date" name="check_in" id="check_in"
+                       value="<?= htmlspecialchars($check_in) ?>" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <div class="uk-form-controls">
+            <div class="uk-inline">
+                <label class="uk-form-label">Check-out Date</label>
+                <span class="uk-form-icon" data-uk-icon="icon: calendar"></span>
+                <input class="uk-input booking-departure uk-border-rounded" 
+                       type="date" name="check_out" id="check_out"
+                       value="<?= htmlspecialchars($check_out) ?>" required>
+            </div>
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <div class="uk-form-controls uk-position-relative">
+            <label class="uk-form-label">No. of Adults</label>
+            <span class="uk-form-icon select-icon" data-uk-icon="icon: users"></span>
+            <input type="number" name="guests" min="1"
+                   value="<?= htmlspecialchars($guests) ?>" 
+                   class="uk-input uk-border-rounded" required>
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <div class="uk-form-controls uk-position-relative">
+            <label class="uk-form-label">No. of Children</label>
+            <span class="uk-form-icon select-icon" data-uk-icon="icon: users"></span>
+            <input type="number" name="children" min="0"
+                   value="<?= htmlspecialchars($children) ?>" 
+                   class="uk-input uk-border-rounded" required>
+        </div>
+    </div>
+
+    <div class="uk-margin">
+        <div class="uk-form-controls uk-position-relative">
+            <label class="uk-form-label">Rooms</label>
+            <span class="uk-form-icon select-icon" data-uk-icon="icon: album"></span>
+            <input type="number" name="no_of_rooms" min="1"
+                   value="<?= htmlspecialchars($no_of_rooms) ?>" 
+                   class="uk-input uk-border-rounded" required>
+        </div>
+    </div>
+
+    <div>
+        <label class="uk-form-label empty-label">&nbsp;</label>
+        <button class="uk-button uk-width-1-1" type="submit">Check Availability</button>
+    </div>
+</form>
+
 							</div>
 							<!-- booking form -->
 						</div>
@@ -709,11 +704,257 @@ Uttarakhand-248003</p>
         <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBGb3xrNtz335X4G2KfoOXb-XuIyHAzlVo"></script> -->
         <!-- <script src="js/jquery.gmap.min.js"></script> -->
         <script src="js/jquery.parallax.min.js"></script>
-        <script src="js/tiny-date-picker.min.js"></script>
+        <!-- <script src="js/tiny-date-picker.min.js"></script> -->
         <script src="js/date-config.js"></script>
         <script src="js/jquery.barrating.js"></script>
         <script src="js/rating-config.js"></script>
         <script src="js/template-config.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+        <script>
+const checkIn   = document.getElementById('check_in');
+const checkOut = document.getElementById('check_out');
+const today = new Date(); const todayStr = today.toISOString().split('T')[0];
+checkIn.setAttribute('min', todayStr);
+checkIn.addEventListener('change', () => {
+    const inDate = new Date(checkIn.value);
+    if (!isNaN(inDate)) {
+        inDate.setDate(inDate.getDate() + 1);
+        const nextDay = inDate.toISOString().split('T')[0];
+        checkOut.value = nextDay;
+        checkOut.setAttribute('min', nextDay);
+    }
+});
+if (checkIn.value) {
+    const inDate = new Date(new Date(checkIn.value).getTime() + (24 * 60 * 60 * 1000));
+    const nextDay = inDate.toISOString().split('T')[0];
+    checkOut.setAttribute('min', nextDay);
+}
+
+function handleNumberInput(input) {
+    input.addEventListener('input', function() {
+        if (this.value.length > 1 && this.value.startsWith('0')) {
+            this.value = parseInt(this.value, 10);
+        }
+    });
+    input.addEventListener('blur', function() {
+        if (this.value === '' || this.value === null) {
+            this.value = 0;
+        }
+    });
+}
+
+document.querySelectorAll('input[type="number"]').forEach(handleNumberInput);
+
+const roomDetailsModal = document.getElementById('roomDetailsModal');
+
+roomDetailsModal.addEventListener('show.bs.modal', function (event) {
+    const imageElement = event.relatedTarget;
+    const roomId = imageElement.getAttribute('data-room-id');
+
+    const modalCarousel = document.getElementById('owl-modal-carousel');
+    const modalRoomName = document.getElementById('modalRoomName');
+    const modalRoomDescription = document.getElementById('modalRoomDescription');
+    const modalAmenities = document.getElementById('modalAmenities');
+
+    modalRoomName.innerText = 'Loading...';
+    modalRoomDescription.innerText = '';
+    modalAmenities.innerHTML = '';
+    modalCarousel.innerHTML = `<div class="text-center p-5 text-muted">Loading images...</div>`;
+
+    fetch(`getRoomDetailsForModal.php?room_id=${roomId}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            if (data.error) {
+                modalRoomName.innerText = 'Error';
+                modalRoomDescription.innerText = data.error;
+                modalCarousel.innerHTML = `<div class="text-center p-5 text-danger">${data.error}</div>`;
+                return;
+            }
+
+            modalRoomName.innerText = data.room_name;
+            modalRoomDescription.innerText = data.description;
+            
+            modalAmenities.innerHTML = data.amenities.map(am => `
+                <span class="badge bg-light text-dark border me-2 mb-2 p-2">
+                    <i class="bi ${am.icon} me-1"></i>
+                    ${am.name}
+                </span>
+            `).join('');
+
+            if ($(modalCarousel).hasClass('owl-carousel')) {
+                $(modalCarousel).owlCarousel('destroy').removeClass('owl-carousel owl-theme');
+            }
+
+            const carouselItems = data.images.map(img => `
+                <div class="item">
+                    <img src="${img}" class="d-block w-100" style="height: 400px; object-fit: cover;">
+                </div>
+            `).join('');
+            
+            modalCarousel.innerHTML = carouselItems || `<div class="text-center p-5 text-muted">No images available.</div>`;
+
+            if (carouselItems) {
+                $(modalCarousel).addClass('owl-carousel owl-theme').imagesLoaded(function() {
+                    $(modalCarousel).owlCarousel({
+                        loop: true,
+                        nav: true,
+                        navText: ['<i class="bi bi-chevron-left"></i>', '<i class="bi bi-chevron-right"></i>'],
+                        dots: true,
+                        items: 1,
+                        autoplay: true,
+                        autoplayTimeout: 5000,
+                        autoplayHoverPause: true,
+                        responsiveClass: true,
+                        responsive: {
+                            0: { items: 1 },
+                            600: { items: 1 },
+                            1000: { items: 1 }
+                        }
+                    });
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Fetch error:', error);
+            modalRoomName.innerText = 'Error';
+            modalRoomDescription.innerText = 'An unknown error occurred. Please check the console for details.';
+            modalAmenities.innerHTML = '';
+            modalCarousel.innerHTML = `<div class="text-center p-5 text-danger">An unknown error occurred.</div>`;
+        });
+});
+
+roomDetailsModal.addEventListener('hidden.bs.modal', function () {
+    const modalCarousel = document.getElementById('owl-modal-carousel');
+    if ($(modalCarousel).hasClass('owl-carousel')) {
+        $(modalCarousel).owlCarousel('destroy').removeClass('owl-carousel owl-theme');
+    }
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const shareButtons = document.querySelectorAll('.share-room-btn');
+
+    shareButtons.forEach(button => {
+        const shareData = {
+            title: button.dataset.title || 'Check out this page',
+            text: 'Check out this room: ' + (button.dataset.title || 'A great hotel room'),
+            url: window.location.origin + '/' + button.dataset.url
+        };
+
+        if (navigator.share) {
+            button.addEventListener('click', async () => {
+                try {
+                    await navigator.share(shareData);
+                    console.log('Content shared successfully');
+                } catch (err) {
+                    console.error('Error sharing:', err.message);
+                }
+            });
+        } else {
+            const shareContainer = button.closest('.share-container');
+            const fallbackHtml = `
+                <div class="d-flex align-items-center">
+                    <span class="d-inline-block me-2">Share this page:</span>
+                    <a href="https://wa.me/?text=${encodeURIComponent(shareData.text + ' ' + shareData.url)}" target="_blank" title="Share on WhatsApp"><i class="fa fa-whatsapp fa-2x"></i></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareData.url)}" target="_blank" title="Share on Facebook"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="https://www.instagram.com/direct/inbox/?text=${encodeURIComponent(shareData.text + ' ' + shareData.url)}" target="_blank" title="Share on Instagram"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+            `;
+            if (shareContainer) {
+                shareContainer.innerHTML = fallbackHtml;
+            } else {
+                button.parentNode.innerHTML = fallbackHtml;
+            }
+        }
+    });
+});
+
+// --- Clear check availability fields on hard refresh (Ctrl+Shift+R) ---
+window.addEventListener("load", function () {
+    if (performance.navigation.type === 1) { // normal refresh (F5)
+        document.getElementById("check_in").value = "";
+        document.getElementById("check_out").value = "";
+        document.querySelector('input[name="no_of_rooms"]').value = 1;
+        document.querySelector('input[name="guests"]').value = 2;
+        document.querySelector('input[name="num_children"]').value = 0;
+    }
+});
+
+// --- Clear dependent fields if user clears input manually ---
+const checkInInput  = document.getElementById("check_in");
+const checkOutInput = document.getElementById("check_out");
+
+checkInInput.addEventListener("input", function () {
+    if (this.value === "") {
+        checkOutInput.value = "";
+    }
+});
+checkOutInput.addEventListener("input", function () {
+    if (this.value === "") {
+        checkInInput.value = "";
+    }
+});
+
+document.querySelectorAll('.availability-form').forEach(form => {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Stop full-page submission
+        const roomId      = this.dataset.roomId;
+        const checkIn     = this.querySelector('[name="check_in"]').value;
+        const checkOut    = this.querySelector('[name="check_out"]').value;
+        const rooms       = this.querySelector('[name="no_of_rooms"]').value || 0;
+        const adults      = this.querySelector('[name="guests"]').value || 1;
+        const children    = this.querySelector('[name="num_children"]').value || 0;
+        const resultDiv   = document.getElementById(`availability-result-${roomId}`);
+
+        fetch('ajaxCheckAvailability.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams({
+                room_id: roomId,  // ✅ Added
+                check_in: checkIn,
+                check_out: checkOut,
+                no_of_rooms: rooms,
+                guests: adults,
+                num_children: children
+            })
+        })
+        .then(res => res.json())
+        .then(data => {
+            if (data.status === 'success') {
+                const room = data.rooms.find(r => r.id == roomId);
+                if (room) {
+                    resultDiv.innerHTML = room.available_qty > 0
+                        ? `<span class="text-success">
+                               <i class="bi bi-calendar2-check"></i>
+                               ${room.available_qty} room(s) available
+                           </span>`
+                        : `<span class="text-danger">
+                               <i class="bi bi-calendar2-x"></i>
+                               Fully Booked
+                           </span>`;
+                } else {
+                    resultDiv.innerHTML = `<span class="text-danger">Not available</span>`;
+                }
+            } else {
+                resultDiv.innerHTML = `<span class="text-danger">${data.message}</span>`;
+            }
+        })
+        .catch(err => {
+            console.error(err);
+            resultDiv.innerHTML = `<span class="text-danger">Error checking availability.</span>`;
+        });
+    });
+});
+</script>
     </body>
 
 

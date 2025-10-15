@@ -88,7 +88,7 @@ $meal_plan_names = [
 
 ?>
 <!doctype html>
-<html class="no-js" lang="zxx">
+<html >
     <head>
         <!-- Standard Meta -->
         <meta charset="utf-8">
@@ -105,10 +105,17 @@ $meal_plan_names = [
        	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
 
         <!-- CSS -->
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
         <link rel="stylesheet" href="css/uikit.min.css" />
         <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <link rel="stylesheet" href="css/tiny-date-picker.min.css" />
-        <link rel="stylesheet" href="css/style.css?v=4.2" />
+        <!-- <link rel="stylesheet" href="css/tiny-date-picker.min.css" /> -->
+         <!-- Add Bootstrap CSS for booking section -->
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+        <link rel="stylesheet" href="css/style.css?v=6.1" />
         <link rel="stylesheet" href="css/media-query.css" />
         
         <?php include 'includes/head.php'; ?>
@@ -169,8 +176,8 @@ $meal_plan_names = [
 				<div class="uk-width-1-1">
 					<div class="uk-flex uk-flex-left">
 						<div class="uk-light uk-position-relative uk-text-left page-title">
-							<h1 class="uk-margin-remove">Room Detail</h1><!-- page title -->
-							<p class="impx-text-large uk-margin-remove">Browse &amp; Choose Your Choice</p><!-- page subtitle -->
+							<h1 class="uk-margin-remove">Booking Form</h1><!-- page title -->
+							<p class="impx-text-large uk-margin-remove">Excelent choice!😊👌 Luckily you're getiing the best rates🎉</p><!-- page subtitle -->
 						</div>
 					</div>
 				</div>
@@ -305,14 +312,22 @@ $meal_plan_names = [
                 </div>
                 </div>
 
-            <div class="col-lg-4">
-                <div style="background-color: #f5f5f5; top: 150px;" class="card p-4 shadow-sm sticky-top">
-                    <h5 class="mb-3">Price Summary</h5>
-                    <div id="price-summary-container">
-                        <p class="text-center text-muted">Calculating price...</p>
-                    </div>
-                </div>
-            </div>
+            <div class="col-lg-4 col-md-12">
+  <aside class="price-summary-wrapper">
+    <div class="price-summary-inner">
+      <h5 class="price-summary-title">Price Summary</h5>
+      <div id="price-summary-container" class="price-summary-body">
+        <div class="spinner-border text-warning mb-2" role="status" style="width:1.8rem;height:1.8rem;">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+        <p class="text-muted small mb-0">Calculating price...</p>
+      </div>
+    </div>
+  </aside>
+</div>
+
+
+
         </div>
     </div>
     <?php else: ?>
@@ -324,14 +339,46 @@ $meal_plan_names = [
     </div>
     <?php endif; ?>
 
+    <!-- CONTACT INFO -->
+		<div class="pre-footer-contact uk-padding bg-img2 uk-position-relative">
+			<div class="impx-overlay dark"></div>
+			<div class="uk-container">
+
+				<div data-uk-grid class="uk-padding-remove-bottom uk-position-relative">				
+					<div class="uk-light uk-width-1-2@xl uk-width-1-2@l uk-width-1-2@m uk-width-1-3@s"><!-- address -->
+						<h5 class="uk-heading-line uk-margin-remove-bottom"><span>Address</span></h5>
+						<p class="impx-text-large uk-margin-top">Shivoham Retreat, CMTC House, Kuthalwali, Johrigaon, Dehradur,
+Uttarakhand-248003</p>
+					</div>
+					<div class="uk-light uk-width-1-4@xl uk-width-1-4@l uk-width-1-4@m uk-width-1-3@s"><!-- phone -->
+						<h5 class="uk-heading-line uk-margin-bottom"><span>Phone</span></h5>
+						<p class="impx-text-large uk-margin-remove">+91-9917003456</p>
+					</div>
+					<div class="uk-light uk-width-1-4@xl uk-width-1-4@l uk-width-1-4@m uk-width-1-3@s"><!-- email -->
+						<h5 class="uk-heading-line uk-margin-bottom"><span>Email</span></h5>
+						<a href="mailto:retreatshivoham@gmail.com" class="impx-text-large">retreatshivoham@gmail.com</a><br/>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- CONTACT INFO END -->
+
     
-    <?php include 'includes/footer.php'; ?>
+    <!-- FOOTER -->
+		<footer id="impx-footer" class="uk-padding uk-padding-remove-bottom uk-padding-remove-horizontal">
+			<?php include 'includes/footer.php'; ?>
+			<!-- Scroll to Top -->
+			<a href="#top" class="to-top fa fa-long-arrow-up" data-uk-scroll></a>
+			<!-- Scroll to Top End -->
+		</footer>
+		<!-- FOOTER END -->
 
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/ajax-form.js"></script>
     <script src="js/waypoints.min.js"></script>
@@ -352,6 +399,22 @@ $meal_plan_names = [
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/mail-script.js"></script>
 
+    <!-- Javascript -->
+    	<script src="js/jquery.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyBGb3xrNtz335X4G2KfoOXb-XuIyHAzlVo"></script> -->
+        <!-- <script src="js/jquery.gmap.min.js"></script> -->
+        <script src="js/jquery.parallax.min.js"></script>
+        <!-- <script src="js/tiny-date-picker.min.js"></script> -->
+        <script src="js/date-config.js"></script>
+        <script src="js/jquery.barrating.js"></script>
+        <script src="js/rating-config.js"></script>
+        <script src="js/template-config.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
     <script src="js/main.js"></script>
     <script>
     function handleNumberInput(input) {
@@ -368,36 +431,51 @@ $meal_plan_names = [
     }
 
     function updatePriceSummary() {
-        const formData = {
-            room_id: <?= $roomId ?>,
-            check_in: $('#check_in').val(),
-            check_out: $('#check_out').val(),
-            no_of_rooms: $('#no_of_rooms').val(),
-            guests: $('#guests').val(),
-            children: $('#children').val(),
-            meal_plan: "<?= htmlspecialchars($mealPlanKey) ?>",
-            room_price: "<?= $roomPrice ?>",
-            extra_bed_price: "<?= $extraBedPrice ?>",
-            child_5_12_price: "<?= $child5to12Price ?>",
-            child_below_5_price: "<?= $childBelow5Price ?>",
-            child_ages: []
-        };
-        $('select[name="child_ages[]"]').each(function() {
-            formData.child_ages.push($(this).val());
-        });
+    const formData = {
+        room_id: <?= (int)$roomId ?>,
+        check_in: $('#check_in').val(),
+        check_out: $('#check_out').val(),
+        no_of_rooms: $('#no_of_rooms').val(),
+        guests: $('#guests').val(),
+        children: $('#children').val(),
+        meal_plan: "<?= htmlspecialchars($mealPlanKey ?? 'standard') ?>",
+        room_price: "<?= (float)$roomPrice ?>",
+        extra_bed_price: "<?= (float)$extraBedPrice ?>",
+        child_5_12_price: "<?= (float)$child5to12Price ?>",
+        child_below_5_price: "<?= (float)$childBelow5Price ?>",
+        child_ages: []
+    };
 
-        $.ajax({
-            url: 'calculateBookingPrice.php',
-            method: 'POST',
-            data: formData,
-            success: function(response) {
-                $('#price-summary-container').html(response);
-            },
-            error: function() {
-                $('#price-summary-container').html('<p class="text-danger">Error calculating price. Please select valid dates and guest information.</p>');
-            }
-        });
-    }
+    $('select[name="child_ages[]"]').each(function() {
+        formData.child_ages.push($(this).val());
+    });
+
+    // Show loading animation
+    $('#price-summary-container').html(`
+        <div class="text-center py-3">
+            <div class="spinner-border text-warning mb-2" style="width:1.8rem;height:1.8rem;"></div>
+            <p class="text-muted small mb-0">Updating price...</p>
+        </div>
+    `);
+
+    $.ajax({
+        url: './calculateBookingPrice.php',
+        type: 'POST',
+        data: formData,
+        success: function(response) {
+            $('#price-summary-container').hide().html(response).fadeIn(250);
+        },
+        error: function() {
+            $('#price-summary-container').html(`
+                <div class="alert alert-danger py-2 mb-0">
+                    <i class="fa fa-exclamation-triangle me-1"></i>
+                    Error calculating price. Please verify your inputs.
+                </div>
+            `);
+        }
+    });
+}
+
 
     function updateGuestFields() {
         const guests = parseInt($('#guests').val());

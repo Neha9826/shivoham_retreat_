@@ -526,6 +526,90 @@ img.logo {
   }
 }
 
+/* ===============================
+   PRICE SUMMARY FINAL FIX
+   =============================== */
+
+.price-summary-wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  position: fixed;
+  top: 370px;
+  overflow-y: hidden;
+  z-index: 35;
+  height: auto;
+  width: 350px;
+}
+
+.price-summary-inner {
+  background: #fff;
+  border: 1px solid #e7e7e7;
+  border-radius: 14px;
+  padding: 30px 28px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.price-summary-title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #bd8f03;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f4f4f4;
+  padding-bottom: 10px;
+}
+
+.price-summary-body {
+  padding-top: 10px;
+  min-height: 180px;
+}
+
+.price-summary-content {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.price-summary-content .d-flex {
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.price-summary-content strong {
+  color: #111;
+}
+
+.price-summary-content hr {
+  border-top: 1px dashed #ddd;
+  margin: 15px 0;
+}
+
+.price-summary-content .h6,
+.price-summary-content .h5 {
+  color: #bd8f03;
+  font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+  .price-summary-wrapper {
+    position: relative !important;
+    top: auto !important;
+    margin-top: 30px;
+  }
+
+  .price-summary-inner {
+    padding: 22px 18px;
+  }
+
+  .price-summary-title {
+    font-size: 1.05rem;
+  }
+}
+
+
  /* === pre written basic css === */
 
 html, body {
