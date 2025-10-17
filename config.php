@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['HTTP_HOST'] === 'localhost') {
-    define('BASE_URL', 'http://localhost/ShivohamRetreat/');
+    define('BASE_URL', 'http://localhost/shivoham_retreat/');
 } else {
     define('BASE_URL', 'https://shivohamretreat.com/');
 }

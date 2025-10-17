@@ -2,6 +2,9 @@
 // room_details.php (Goibibo-style Room Selection Page with Advanced Search)
 session_start();
 include 'db.php';
+include 'config.php';
+include 'includes/helpers.php';
+
 
 // 📌 YOU MUST UPDATE THIS PATH WITH YOUR SUBFOLDER NAME
 $basePath = ''; // For example: '/my-hotel-project/' or '/hotel/'
@@ -130,16 +133,26 @@ if ($available < $no_of_rooms) {
             $room['child_below_5_price'] = $room['price_child_below_5'];
 
             // ✅ Room images
-            $images = [];
-            if (!empty($room['image_paths'])) {
-                $images = array_map(function($path) use ($basePath) {
-                    if (strpos($path, 'admin/') !== 0 && strpos($path, 'assets/') !== 0) {
-                        return $basePath . 'admin/' . $path;
-                    }
-                    return $basePath . $path;
-                }, explode(',', $room['image_paths']));
-            }
-            $room['images'] = $images;
+            // ✅ FIXED IMAGE PATH HANDLING (for your actual DB)
+$images = [];
+if (!empty($room['image_paths'])) {
+    $images = array_map(function($path) use ($basePath) {
+        $path = trim($path);
+        // If already starts with 'admin/', keep as is
+        if (strpos($path, 'admin/') === 0) {
+            return $basePath . $path;
+        }
+        // If it's a full URL
+        if (preg_match('/^https?:\/\//', $path)) {
+            return $path;
+        }
+        // Default fallback (assume admin/uploads)
+        return $basePath . 'admin/uploads/' . $path;
+    }, explode(',', $room['image_paths']));
+}
+$room['images'] = $images;
+
+
 
             // ✅ Amenities
             $amenityList = [];
@@ -671,7 +684,7 @@ $meal_plan_features = [
 				<div data-uk-grid class="uk-padding-remove-bottom uk-position-relative">				
 					<div class="uk-light uk-width-1-2@xl uk-width-1-2@l uk-width-1-2@m uk-width-1-3@s"><!-- address -->
 						<h5 class="uk-heading-line uk-margin-remove-bottom"><span>Address</span></h5>
-						<p class="impx-text-large uk-margin-top">Shivoham Retreat, CMTC House, Kuthalwali, Johrigaon, Dehradur,
+						<p class="impx-text-large uk-margin-top">Shivoham Retreat, CMTC House, Kuthalwali, Johrigaon, Dehradun,
 Uttarakhand-248003</p>
 					</div>
 					<div class="uk-light uk-width-1-4@xl uk-width-1-4@l uk-width-1-4@m uk-width-1-3@s"><!-- phone -->

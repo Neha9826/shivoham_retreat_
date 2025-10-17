@@ -1,0 +1,124 @@
+/* ==============================
+   VIEW BOOKING PAGE STYLING
+   ============================== */
+
+.about_area {
+  background-color: #fafafa;
+}
+
+.about_area .card {
+  max-width: 900px;
+  margin: 0 auto;
+  border: 1px solid #e7e7e7;
+  border-radius: 12px;
+  padding: 25px 28px;
+  background-color: #fff;
+}
+
+.about_area .card-body {
+  padding: 0;
+}
+
+.about_area .alert {
+  font-size: 1.05rem;
+  font-weight: 600;
+  background-color: #e8f9ee;
+  border-color: #bce5c8;
+  color: #2a6c3d;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+/* --- Table Styling --- */
+.about_area table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+  background-color: #fff;
+}
+
+.about_area table th,
+.about_area table td {
+  vertical-align: middle;
+  text-align: left;
+  padding: 14px 12px;
+  font-size: 0.96rem;
+  border-color: #e7e7e7;
+}
+
+.about_area table th {
+  width: 40%;
+  background-color: #f9f9f9;
+  font-weight: 600;
+  color: #333;
+}
+
+.about_area table td {
+  color: #555;
+}
+
+.about_area .btn-primary {
+  background-color: #bd8f03;
+  border-color: #bd8f03;
+  font-size: 1rem;
+  padding: 10px 25px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.about_area .btn-primary:hover {
+  background-color: #a67c02;
+  border-color: #a67c02;
+  transform: translateY(-2px);
+}
+
+/* --- RESPONSIVENESS --- */
+@media (max-width: 991.98px) {
+  .about_area {
+    padding: 40px 0 20px;
+  }
+
+  .about_area .card {
+    padding: 20px 18px;
+  }
+
+  .about_area table th,
+  .about_area table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about_area .card {
+    margin: 0 10px;
+  }
+
+  /* Make table scrollable horizontally on very small screens */
+  .about_area .table-responsive {
+    border-radius: 8px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .about_area table th,
+  .about_area table td {
+    padding: 8px;
+    font-size: 0.88rem;
+  }
+
+  .about_area .btn-primary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about_area .alert {
+    font-size: 0.95rem;
+  }
+
+  .about_area table th,
+  .about_area table td {
+    font-size: 0.85rem;
+  }
+}

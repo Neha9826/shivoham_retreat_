@@ -142,6 +142,7 @@ $guestsAndChildren = $guestsText . ($booking['children'] > 0 ? ", " . $childrenT
         <link rel="stylesheet" href="css/font-awesome.min.css" />
         <!-- <link rel="stylesheet" href="css/tiny-date-picker.min.css" /> -->
         <link rel="stylesheet" href="css/style.css?v=6.1" />
+        <link rel="stylesheet" href="css/view-booking.css?v=6.1">
         <link rel="stylesheet" href="css/media-query.css" />
 
     
@@ -228,12 +229,10 @@ $guestsAndChildren = $guestsText . ($booking['children'] > 0 ? ", " . $childrenT
     <div class="container mt-5 mb-5">
         <div class="card shadow-lg p-4">
             <div class="card-body">
-
-
-            <div class="alert alert-success text-center" role="alert">
-                                    Thank you, <?= htmlspecialchars($booking['name']) ?>!
-                                    Your booking has been received.
-                                </div>
+                <div class="alert alert-success text-center" role="alert">
+                    Thank you, <?= htmlspecialchars($booking['name']) ?>!
+                    Your booking has been received.
+                </div>
                 <div class="table-responsive">
                     <table class="table table-bordered table-striped">
                         <tbody>
@@ -312,7 +311,7 @@ $guestsAndChildren = $guestsText . ($booking['children'] > 0 ? ", " . $childrenT
 				<div data-uk-grid class="uk-padding-remove-bottom uk-position-relative">				
 					<div class="uk-light uk-width-1-2@xl uk-width-1-2@l uk-width-1-2@m uk-width-1-3@s"><!-- address -->
 						<h5 class="uk-heading-line uk-margin-remove-bottom"><span>Address</span></h5>
-						<p class="impx-text-large uk-margin-top">Shivoham Retreat, CMTC House, Kuthalwali, Johrigaon, Dehradur,
+						<p class="impx-text-large uk-margin-top">Shivoham Retreat, CMTC House, Kuthalwali, Johrigaon, Dehradun,
 Uttarakhand-248003</p>
 					</div>
 					<div class="uk-light uk-width-1-4@xl uk-width-1-4@l uk-width-1-4@m uk-width-1-3@s"><!-- phone -->

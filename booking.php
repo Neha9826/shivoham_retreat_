@@ -96,7 +96,7 @@ $meal_plan_names = [
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Site Properties -->
-        <title>Room Detail - Shivoham</title>
+        <title>Booking Form - Shivoham</title>
 		<link rel="shortcut icon" href="images/Shivoham.png" type="image/x-icon">
         <link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
 
@@ -118,7 +118,6 @@ $meal_plan_names = [
         <link rel="stylesheet" href="css/style.css?v=6.1" />
         <link rel="stylesheet" href="css/media-query.css" />
         
-        <?php include 'includes/head.php'; ?>
     </head>
     
     <style>
@@ -347,7 +346,7 @@ $meal_plan_names = [
 				<div data-uk-grid class="uk-padding-remove-bottom uk-position-relative">				
 					<div class="uk-light uk-width-1-2@xl uk-width-1-2@l uk-width-1-2@m uk-width-1-3@s"><!-- address -->
 						<h5 class="uk-heading-line uk-margin-remove-bottom"><span>Address</span></h5>
-						<p class="impx-text-large uk-margin-top">Shivoham Retreat, CMTC House, Kuthalwali, Johrigaon, Dehradur,
+						<p class="impx-text-large uk-margin-top">Shivoham Retreat, CMTC House, Kuthalwali, Johrigaon, Dehradun,
 Uttarakhand-248003</p>
 					</div>
 					<div class="uk-light uk-width-1-4@xl uk-width-1-4@l uk-width-1-4@m uk-width-1-3@s"><!-- phone -->

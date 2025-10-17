@@ -13,7 +13,7 @@
             <div data-uk-grid class="uk-padding-remove-bottom"><!-- Address -->
                 <div class="uk-light uk-width-1-2@xl uk-width-1-2@l uk-width-1-2@m uk-width-1-1@s">
                     <h5 class="uk-heading-line uk-margin-remove-bottom impx-text-white"><span>Address</span></h5>
-                    <p class="impx-text-large uk-margin-top impx-text-light">Shivoham Retreat, CMTC House, Kuthalwali, Johrigaon, Dehradur, <br/>Uttarakhand-248003</p>
+                    <p class="impx-text-large uk-margin-top impx-text-light">Shivoham Retreat, CMTC House, Kuthalwali, Johrigaon, Dehradun, <br/>Uttarakhand-248003</p>
                 </div><!-- Address End-->
                 <div class="uk-light uk-width-1-4@xl uk-width-1-4@l uk-width-1-4@m uk-width-1-1@s"><!-- Phone -->
                     <h5 class="uk-heading-line uk-margin-bottom impx-text-white"><span>Phone</span></h5>

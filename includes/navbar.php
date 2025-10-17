@@ -16,7 +16,7 @@
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li class="uk-nav-header uk-text-bold">Luxury valley facing Double Room</li>
 									<li>
-										<a href=""><img src="images/rooms/room-menu-1.jpg" alt=""></a>
+										<a href="#rooms"><img src="images/about_banner13.png" alt=""></a>
 										<p class="uk-margin-small-bottom uk-margin-small-top impx-hidden-m"></p>
 										<a class="uk-button uk-button-default uk-button-small impx-button impx-button-outline aqua small small-border" href="">Visit Page</a>
 									</li>
@@ -26,7 +26,7 @@
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li class="uk-nav-header uk-text-bold">Luxury Studio Room</li>
 									<li>
-										<a href=""><img src="images/rooms/room-menu-2.jpg" alt=""></a>
+										<a href="#rooms"><img src="images/about_banner2.png" alt=""></a>
 										<p class="uk-margin-small-bottom uk-margin-small-top impx-hidden-m"></p>
 										<a class="uk-button uk-button-default uk-button-small impx-button impx-button-outline aqua small small-border" href="">Visit Page</a>
 									</li>
@@ -34,10 +34,9 @@
 							</div>
 							<div>
 								<ul class="uk-nav uk-navbar-dropdown-nav">
-									<li class="uk-nav-header uk-text-bold">Shivoham Harmony House
-</li>
+									<li class="uk-nav-header uk-text-bold">Shivoham Harmony House</li>
 									<li>
-										<a href=""><img src="images/rooms/room-menu-3.jpg" alt=""></a>
+										<a href="#rooms"><img src="images/about_banner8_.png" alt=""></a>
 										<p class="uk-margin-small-bottom uk-margin-small-top impx-hidden-m"></p>
 										<a class="uk-button uk-button-default uk-button-small impx-button impx-button-outline aqua small small-border" href="">Visit Page</a>
 									</li>

@@ -96,19 +96,27 @@ if (isset($_POST['submit'])) {
     }
 
     // Handle new images
-    if (!empty($_FILES['room_images']['name'][0])) {
-        $uploadDir = "uploads/rooms/";
-        if (!is_dir($uploadDir)) mkdir($uploadDir, 0777, true);
-
-        foreach ($_FILES['room_images']['tmp_name'] as $key => $tmp_name) {
-            $fileName = basename($_FILES['room_images']['name'][$key]);
-            $targetFilePath = $uploadDir . time() . '_' . $fileName;
-            if (move_uploaded_file($tmp_name, $targetFilePath)) {
-                $imagePath = mysqli_real_escape_string($conn, "admin/" . $targetFilePath);
-                mysqli_query($conn, "INSERT INTO room_images (room_id, image_path) VALUES ($room_id, '$imagePath')");
-            }
-        }
+    if (isset($_FILES['image']) && $_FILES['image']['error'] == 0) {
+    // 1️⃣ Create folder if missing
+    $uploadDir = __DIR__ . '/uploads/rooms/';
+    if (!is_dir($uploadDir)) {
+        mkdir($uploadDir, 0777, true);
     }
+
+    // 2️⃣ Generate unique filename
+    $filename = time() . '_' . basename($_FILES['image']['name']);
+    $targetFile = $uploadDir . $filename;
+
+    // 3️⃣ Move uploaded file
+    if (move_uploaded_file($_FILES['image']['tmp_name'], $targetFile)) {
+        // 4️⃣ Save path to DB (relative path)
+        $image_path = 'admin/uploads/rooms/' . $filename;
+        // Insert $image_path into DB here...
+    } else {
+        echo "<p class='text-danger'>❌ Error moving uploaded file.</p>";
+    }
+}
+
     
     // Handle image deletions
     if (!empty($_POST['delete_images'])) {

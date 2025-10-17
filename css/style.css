@@ -94,7 +94,7 @@
    
    /* ===== Logo Responsiveness Fix ===== */
 .impx-logo img.logo {
-  max-width: 100%;
+  max-width: 100px;
   height: auto;
   display: block;
 }
@@ -124,7 +124,7 @@
 img.logo {
     height: auto !important;
     width: 100% !important;
-    max-width: 150px !important;
+    max-width: 80px !important;
 }
 
 /* ========== Banner Slider Fix ========== */
@@ -608,6 +608,7 @@ img.logo {
     font-size: 1.05rem;
   }
 }
+
 
 
  /* === pre written basic css === */
@@ -2375,6 +2376,8 @@ s:nth-of-type(2){
 .impx-logo img {
 	display: block;
 	margin: 0 auto;
+	height: 100px;
+	width: auto;
 }
 .impx-menu-wrapper.style2 .impx-logo img {
 	margin-right: 0;

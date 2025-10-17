@@ -191,7 +191,7 @@ $roomDataJson = json_encode($rooms);
 							<div><!-- pricing item #1 -->
 								<div class="impx-promo-pricing uk-padding uk-box-shadow-medium uk-light bg-color-white">
 									<div class="uk-position-relative">
-										<img src="images/about_banner10.png" alt="">
+										<img src="images/about_banner13.png" alt="">
 										<div class="impx-overlay light"></div>
 									</div>
 									<div class=" uk-position-relative bg-color-gold uk-padding">
@@ -213,7 +213,7 @@ $roomDataJson = json_encode($rooms);
 							<div class="uk-position-relative uk-position-z-index"><!-- pricing item #2 -->
 								<div class="impx-promo-pricing uk-padding uk-box-shadow-large uk-light featured bg-color-white">
 									<div class="uk-position-relative">
-										<img src="images/about_banner8.png" alt="">
+										<img src="images/about_banner2.png" alt="">
 										<div class="impx-overlay light"></div>
 									</div>
 									<div class=" uk-position-relative bg-color-aqua uk-padding">
@@ -233,7 +233,7 @@ $roomDataJson = json_encode($rooms);
 							<div><!-- pricing item #3 -->
 								<div class="impx-promo-pricing uk-padding uk-box-shadow-medium uk-light bg-color-white">
 									<div class="uk-position-relative">
-										<img src="images/about_banner13.png" alt="">
+										<img src="images/about_banner8_.png" alt="">
 										<div class="impx-overlay light"></div>
 									</div>
 									<div class=" uk-position-relative bg-color-gold uk-padding">
@@ -244,7 +244,7 @@ $roomDataJson = json_encode($rooms);
 											<li><i class="fa fa-coffee"></i>Warm lighting & peaceful surroundings</li>
 											<li><i class="fa fa-group"></i> Perfect for a serene Himalayan stay</li>
 										</ul>
-										<a href="room_detail.php?room_id= 9 &check_in=<?= urlencode($check_in) ?>&check_out=<?= urlencode($check_out) ?>&no_of_rooms=<?= (int)$no_of_rooms ?>&guests=<?= (int)$guests ?>&children=<?= (int)$children ?>"
+										<a href="room_detail.php?room_id=9 &check_in=<?= urlencode($check_in) ?>&check_out=<?= urlencode($check_out) ?>&no_of_rooms=<?= (int)$no_of_rooms ?>&guests=<?= (int)$guests ?>&children=<?= (int)$children ?>"
    class="uk-button impx-button small impx-button-outline small-border">
    View Detail <i class="fa fa-arrow-right"></i></a>
 									</div>
