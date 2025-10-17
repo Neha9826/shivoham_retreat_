@@ -1,0 +1,68 @@
+# ----------------------------------------------------------
+# 🧾 Shivoham Retreat Project - Git Ignore Configuration
+# ----------------------------------------------------------
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node & npm
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Composer
+/vendor/
+composer.lock
+
+# PHPStorm / VSCode / Editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# XAMPP and environment files
+.env
+*.env
+*.log
+*.bak
+*.tmp
+
+# Cache and uploads
+cache/
+uploads/
+tmp/
+*.zip
+*.tar.gz
+*.rar
+
+# Backup files
+*.sql
+*.db
+*.sqlite
+
+# Video and large media files (prevent GitHub push errors)
+video/*.mp4
+video/*.mov
+video/*.avi
+video/*.mkv
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Image raw formats (optional)
+*.psd
+*.ai
+*.eps
+*.tif
+
+# System-specific folders
+__MACOSX/
+ehthumbs.db
+
+# ----------------------------------------------------------
+# End of .gitignore
+# ----------------------------------------------------------
