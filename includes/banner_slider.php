@@ -45,7 +45,7 @@
 						    	<!-- Slideshow Item #3 -->
 						    	<li>
 						    		<div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
-								    	<video src="video/banner3.mp4" alt="" data-uk-cover>
+								    	<video src="video/banner.mp4" alt="" data-uk-cover>
 								    	<div class="uk-overlay-primary uk-position-cover impx-overlay dark"></div>
 								    </div>
 								    <div class="uk-container uk-position-relative uk-height-1-1">

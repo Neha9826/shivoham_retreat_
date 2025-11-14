@@ -534,7 +534,7 @@ img.logo {
   position: -webkit-sticky;
   position: sticky;
   position: fixed;
-  top: 370px;
+  top: 300px;
   overflow-y: hidden;
   z-index: 35;
   height: auto;
