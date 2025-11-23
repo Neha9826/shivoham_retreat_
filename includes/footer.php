@@ -5,8 +5,7 @@
                 <!-- Footer Logo -->
                 <img style="height:100px" src="images/Shivoham.png" alt="" class="">
                 <!-- Footer Note -->
-                <p class="uk-margin-bottom">Copyright ©2025 All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by
-                        <a style="color: #85dbdbff" href="https://my-portfolio-7bb38.web.app/" target="_blank">Neha Pattnayak</a></p>							
+                <p class="uk-margin-bottom">Copyright ©2025 All rights reserved </p>							
                 <!-- Site Copyright -->
                 
             </div>

@@ -13,7 +13,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 <!DOCTYPE html>
 <html>
-<head>   
+<head>
+
+<meta name="description" content="Shivoham Retreat is a cozy homestay and yoga retreat located near Mussoorie Road, Dehradun. Enjoy peaceful mountain views, Mussoorie visible from the balcony, spacious rooms, homely meals, and quick access to nearby attractions like Gucchupani, Tapkeshwar Temple, FRI, Maldevta, Robber’s Cave and Sahastradhara. Book your stay for a calm Himalayan getaway.">
+
+<meta name="keywords" content="Shivoham Retreat, homestay in Dehradun, Dehradun stay, cozy homestay Dehradun, Mussoorie view homestay, yoga retreat in Dehradun, Mussoorie Road homestay, stay near Mussoorie, hotels near Maldevta, homestay near FRI, Gucchupani, Tapkeshwar Temple, Robbers Cave, Sahastradhara, Dehradun tourism, best homestay in Dehradun, affordable stays Dehradun, peaceful homestay Dehradun">
+
+<meta name="author" content="Shivoham Retreat">
+<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="geo.region" content="IN-UT">
+<meta name="geo.placename" content="Dehradun, Uttarakhand, India">
+<meta name="geo.position" content="30.383314;78.091268">
+<meta name="ICBM" content="30.383314, 78.091268">
+
+<link rel="canonical" href="https://shivohamretreat.com/">
+
+<meta property="og:title" content="Shivoham Retreat | Cozy Homestay & Yoga Retreat in Dehradun">
+<meta property="og:description" content="Experience a peaceful and cozy homestay with Mussoorie views from the balcony. Yoga retreats, spacious rooms, homely food, and top Dehradun attractions nearby — Shivoham Retreat.">
+<meta property="og:image" content="https://shivohamretreat.com/images/banner.jpg">
+<meta property="og:url" content="https://shivohamretreat.com/">
+<meta property="og:type" content="place">
+<meta property="place:location:latitude" content="30.383314">
+<meta property="place:location:longitude" content="78.091268">
+<meta property="og:site_name" content="Shivoham Retreat">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Shivoham Retreat | Cozy Homestay & Yoga Retreat in Dehradun">
+<meta name="twitter:description" content="Stay at a peaceful Himalayan homestay with Mussoorie views from the balcony and easy access to top places in Dehradun.">
+<meta name="twitter:image" content="https://shivohamretreat.com/images/banner.jpg">
+
+<meta name="language" content="English">
+<meta name="distribution" content="global">
+<meta name="rating" content="General">
+
 	<!-- Standard Meta -->
 	<meta charset="utf-8">
 	<meta name="format-detection" content="telephone=no" />
@@ -23,6 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 	<!-- Site Properties -->
 	<title>Shivoham Yoga Retreat</title>
+	<!-- <title>Shivoham Retreat | Cozy Homestay & Yoga Retreat Near Mussoorie Road, Dehradun</title> -->
 	<link rel="shortcut icon" href="images/Shivoham.png" type="image/x-icon">
 	<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.png">
 
@@ -90,8 +125,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 		</div>
 		<!-- BOOKING FORM END -->
 
-		
-
 		<!-- WHY CHOOSE US? -->
 		 <div id="about" class="uk-padding uk-padding-remove-horizontal uk-position-relative uk-position-relative bg-img1">
 			<?php include 'includes/about.php'; ?>
@@ -128,8 +161,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 			<?php include 'includes/footer.php'; ?>
 
 			<!-- Scroll to Top -->
-<a href="#top" class="to-top fa fa-long-arrow-up" data-uk-scroll></a>
-<!-- Scroll to Top End -->
+			<a href="#top" class="to-top fa fa-long-arrow-up" data-uk-scroll></a>
+			<!-- Scroll to Top End -->
 		</footer>
 		<!-- FOOTER END -->
 
@@ -143,6 +176,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
         <script src="js/jquery.parallax.min.js"></script>
         <script src="js/date-config.js"></script>
         <script src="js/template-config.js"></script>
+
+		
     </body>
 
 

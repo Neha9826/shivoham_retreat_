@@ -312,17 +312,17 @@ $meal_plan_names = [
                 </div>
 
             <div class="col-lg-4 col-md-12">
-  <aside class="price-summary-wrapper">
-    <div class="price-summary-inner">
-      <h5 class="price-summary-title">Price Summary</h5>
-      <div id="price-summary-container" class="price-summary-body">
-        <div class="spinner-border text-warning mb-2" role="status" style="width:1.8rem;height:1.8rem;">
-          <span class="visually-hidden">Loading...</span>
+    <aside class="price-summary-wrapper">
+        <div class="price-summary-inner">
+            <h5 class="price-summary-title">Price Summary</h5>
+            <div id="price-summary-container" class="price-summary-body">
+                <div class="spinner-border text-warning mb-2" role="status" style="width:1.8rem;height:1.8rem;">
+                <span class="visually-hidden">Loading...</span>
+                </div>
+                <p class="text-muted small mb-0">Calculating price...</p>
+            </div>
         </div>
-        <p class="text-muted small mb-0">Calculating price...</p>
-      </div>
-    </div>
-  </aside>
+    </aside>
 </div>
 
 

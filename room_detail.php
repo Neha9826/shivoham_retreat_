@@ -592,83 +592,90 @@ $meal_plan_features = [
 
 					<!-- SIDEBAR -->
 					<div class="uk-width-1-3@xl uk-width-1-3@l uk-width-1-3@m uk-width-1-1@s">
-						<!-- booking form -->
-						<div class="bg-color-aqua uk-padding impx-padding-medium uk-margin-medium-bottom uk-box-shadow-medium">
+    <!-- booking form -->
+    
+    <!-- 
+        CHANGED: Replaced inline CSS sticky with UIkit's JS sticky component.
+        data-uk-sticky attributes:
+        - offset: 100 -> Adds 100px margin from top when scrolling.
+        - bottom: true -> Ensures it stays within the parent column/grid and doesn't overlap footer.
+        - media: @m -> Only enables sticky behavior on devices larger than 'medium' (tablets/desktops).
+    -->
+    <div class="bg-color-aqua uk-padding impx-padding-medium uk-margin-medium-bottom uk-box-shadow-medium" 
+         data-uk-sticky="offset: 100; bottom: true; media: @m">
 
-							<div class="impx-hp-booking-form side-form uk-margin-bottom uk-margin-remove-top ">
-								<h6 class="uk-heading-line uk-text-center uk-light uk-text-uppercase"><span>Check Availability</span></h6>
-								<form class="" method="GET" action="room_detail.php" data-room-id="<?= htmlspecialchars($room_id) ?>">
-    <!-- Hidden Room ID -->
-    <input type="hidden" name="room_id" value="<?= htmlspecialchars($room_id) ?>">
+        <div class="impx-hp-booking-form side-form uk-margin-bottom uk-margin-remove-top ">
+            <h6 class="uk-heading-line uk-text-center uk-light uk-text-uppercase"><span>Check Availability</span></h6>
+            <form class="" method="GET" action="room_detail.php" data-room-id="<?= htmlspecialchars($room_id) ?>">
+                <!-- Hidden Room ID -->
+                <input type="hidden" name="room_id" value="<?= htmlspecialchars($room_id) ?>">
 
-    <div class="uk-margin">
-        <div class="uk-form-controls">
-            <div class="uk-inline">
-                <label class="uk-form-label">Check-in Date</label>
-                <span class="uk-form-icon" data-uk-icon="icon: calendar"></span>
-                <input class="uk-input booking-arrival uk-border-rounded" 
-                       type="date" name="check_in" id="check_in"
-                       value="<?= htmlspecialchars($check_in) ?>" required>
-            </div>
+                <div class="uk-margin">
+                    <div class="uk-form-controls">
+                        <div class="uk-inline">
+                            <label class="uk-form-label">Check-in Date</label>
+                            <span class="uk-form-icon" data-uk-icon="icon: calendar"></span>
+                            <input class="uk-input booking-arrival uk-border-rounded" 
+                                type="date" name="check_in" id="check_in"
+                                value="<?= htmlspecialchars($check_in) ?>" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <div class="uk-form-controls">
+                        <div class="uk-inline">
+                            <label class="uk-form-label">Check-out Date</label>
+                            <span class="uk-form-icon" data-uk-icon="icon: calendar"></span>
+                            <input class="uk-input booking-departure uk-border-rounded" 
+                                type="date" name="check_out" id="check_out"
+                                value="<?= htmlspecialchars($check_out) ?>" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <div class="uk-form-controls uk-position-relative">
+                        <label class="uk-form-label">No. of Adults</label>
+                        <span class="uk-form-icon select-icon" data-uk-icon="icon: users"></span>
+                        <input type="number" name="guests" min="1"
+                            value="<?= htmlspecialchars($guests) ?>" 
+                            class="uk-input uk-border-rounded" required>
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <div class="uk-form-controls uk-position-relative">
+                        <label class="uk-form-label">No. of Children</label>
+                        <span class="uk-form-icon select-icon" data-uk-icon="icon: users"></span>
+                        <input type="number" name="children" min="0"
+                            value="<?= htmlspecialchars($children) ?>" 
+                            class="uk-input uk-border-rounded" required>
+                    </div>
+                </div>
+
+                <div class="uk-margin">
+                    <div class="uk-form-controls uk-position-relative">
+                        <label class="uk-form-label">Rooms</label>
+                        <span class="uk-form-icon select-icon" data-uk-icon="icon: album"></span>
+                        <input type="number" name="no_of_rooms" min="1"
+                            value="<?= htmlspecialchars($no_of_rooms) ?>" 
+                            class="uk-input uk-border-rounded" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="uk-form-label empty-label">&nbsp;</label>
+                    <button class="uk-button uk-width-1-1" type="submit">Check Availability</button>
+                </div>
+            </form>
+
         </div>
+        <!-- booking form -->
     </div>
+    <!-- SIDEBAR END -->
 
-    <div class="uk-margin">
-        <div class="uk-form-controls">
-            <div class="uk-inline">
-                <label class="uk-form-label">Check-out Date</label>
-                <span class="uk-form-icon" data-uk-icon="icon: calendar"></span>
-                <input class="uk-input booking-departure uk-border-rounded" 
-                       type="date" name="check_out" id="check_out"
-                       value="<?= htmlspecialchars($check_out) ?>" required>
-            </div>
-        </div>
-    </div>
-
-    <div class="uk-margin">
-        <div class="uk-form-controls uk-position-relative">
-            <label class="uk-form-label">No. of Adults</label>
-            <span class="uk-form-icon select-icon" data-uk-icon="icon: users"></span>
-            <input type="number" name="guests" min="1"
-                   value="<?= htmlspecialchars($guests) ?>" 
-                   class="uk-input uk-border-rounded" required>
-        </div>
-    </div>
-
-    <div class="uk-margin">
-        <div class="uk-form-controls uk-position-relative">
-            <label class="uk-form-label">No. of Children</label>
-            <span class="uk-form-icon select-icon" data-uk-icon="icon: users"></span>
-            <input type="number" name="children" min="0"
-                   value="<?= htmlspecialchars($children) ?>" 
-                   class="uk-input uk-border-rounded" required>
-        </div>
-    </div>
-
-    <div class="uk-margin">
-        <div class="uk-form-controls uk-position-relative">
-            <label class="uk-form-label">Rooms</label>
-            <span class="uk-form-icon select-icon" data-uk-icon="icon: album"></span>
-            <input type="number" name="no_of_rooms" min="1"
-                   value="<?= htmlspecialchars($no_of_rooms) ?>" 
-                   class="uk-input uk-border-rounded" required>
-        </div>
-    </div>
-
-    <div>
-        <label class="uk-form-label empty-label">&nbsp;</label>
-        <button class="uk-button uk-width-1-1" type="submit">Check Availability</button>
-    </div>
-</form>
-
-							</div>
-							<!-- booking form -->
-						</div>
-						<!-- SIDEBAR END -->
-
-						
-
-					</div>
+</div>
             <?php endif; ?>
 				</div>
 			</div>

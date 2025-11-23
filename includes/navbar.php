@@ -16,9 +16,9 @@
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li class="uk-nav-header uk-text-bold">Luxury valley facing Double Room</li>
 									<li>
-										<a href="#rooms"><img src="images/about_banner13.png" alt=""></a>
+										<a href="room_detail.php?room_id=8"><img src="images/about_banner13.png" alt=""></a>
 										<p class="uk-margin-small-bottom uk-margin-small-top impx-hidden-m"></p>
-										<a class="uk-button uk-button-default uk-button-small impx-button impx-button-outline aqua small small-border" href="">Visit Page</a>
+										<a href="room_detail.php?room_id=8" class="uk-button uk-button-default uk-button-small impx-button impx-button-outline aqua small small-border" href="">Visit Page</a>
 									</li>
 								</ul>
 							</div>
@@ -26,9 +26,9 @@
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li class="uk-nav-header uk-text-bold">Luxury Studio Room</li>
 									<li>
-										<a href="#rooms"><img src="images/about_banner2.png" alt=""></a>
+										<a href="room_detail.php?room_id=9"><img src="images/about_banner2.png" alt=""></a>
 										<p class="uk-margin-small-bottom uk-margin-small-top impx-hidden-m"></p>
-										<a class="uk-button uk-button-default uk-button-small impx-button impx-button-outline aqua small small-border" href="">Visit Page</a>
+										<a href="room_detail.php?room_id=9" class="uk-button uk-button-default uk-button-small impx-button impx-button-outline aqua small small-border" href="">Visit Page</a>
 									</li>
 								</ul>
 							</div>
@@ -36,9 +36,9 @@
 								<ul class="uk-nav uk-navbar-dropdown-nav">
 									<li class="uk-nav-header uk-text-bold">Shivoham Harmony House</li>
 									<li>
-										<a href="#rooms"><img src="images/about_banner8_.png" alt=""></a>
+										<a href="room_detail.php?room_id=10"><img src="images/about_banner8_.png" alt=""></a>
 										<p class="uk-margin-small-bottom uk-margin-small-top impx-hidden-m"></p>
-										<a class="uk-button uk-button-default uk-button-small impx-button impx-button-outline aqua small small-border" href="">Visit Page</a>
+										<a href="room_detail.php?room_id=10" class="uk-button uk-button-default uk-button-small impx-button impx-button-outline aqua small small-border" href="">Visit Page</a>
 									</li>
 								</ul>
 							</div>

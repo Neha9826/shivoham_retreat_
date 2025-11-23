@@ -174,8 +174,6 @@ if ($roomResult && $roomResult->num_rows > 0) {
 
 $roomDataJson = json_encode($rooms);
 ?>
-
-
 			<div class="uk-container">
 				<div class="uk-flex uk-flex-center uk-margin-medium-bottom impx-rooms-intro">
 					<div class="uk-width-2-3@xl uk-width-2-3@l uk-width-1-1@m uk-width-1-1@s uk-text-center"><!-- intro -->

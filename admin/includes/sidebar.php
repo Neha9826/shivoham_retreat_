@@ -65,10 +65,6 @@ include_once __DIR__ . '/../config.php';
                         <a class="nav-link" href="extraBedList.php">All Extra Beds</a>
                     </nav>
                 </div> -->
-                <a class="nav-link" href="<?= BASE_URL ?>yoga/index.php">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                    Yoga
-                </a>
                 <!-- <div class="collapse" id="yogaDropdown" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="addYogaDropdown.php">Add Yoga Option</a>
