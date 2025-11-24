@@ -48,7 +48,7 @@
 				<!-- <li><a href="restaurant.html"><div>Kitchen<div class="uk-navbar-subtitle">Kitchen & Dining</div></div></a></li> -->
 				<li><a href="#about"><div>About<div class="uk-navbar-subtitle">About Shivoham</div></div></a></li>
 				<li><a href="#activities" class="uk-navbar-nav-subtitle"><div>Activities<div class="uk-navbar-subtitle">Our Facilities</div></div></a></li>
-				<li><a href="#gallery" class="uk-navbar-nav-subtitle"><div>Gallery<div class="uk-navbar-subtitle">Photos</div></div></a></li>
+				<li><a href="gallery.php" class="uk-navbar-nav-subtitle"><div>Gallery<div class="uk-navbar-subtitle">Photos</div></div></a></li>
 				<!-- <li class="uk-parent">
 					<a href="#" class="uk-navbar-nav-subtitle"><div>Pages<div class="uk-navbar-subtitle">the Other Pages</div></div></a>
 					<div class="uk-navbar-dropdown">

@@ -112,8 +112,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 					</div>
 				</div>
 			</div>
-
-		</header><!-- HEADER END -->
+		</header>
+		<!-- HEADER END -->
 
 		<!-- SLIDESHOW -->
 		<?php include 'includes/banner_slider.php'; ?>
