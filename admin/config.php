@@ -2,7 +2,7 @@
 if ($_SERVER['HTTP_HOST'] === 'localhost') {
     define('BASE_URL', 'http://localhost/shivoham_retreat/admin/');
 } else {
-    define('BASE_URL', 'https://shivoham_retreat.com/admin/');
+    define('BASE_URL', 'https://shivohamretreat.com/admin/');
 }
 
 // Absolute path for server-side includes

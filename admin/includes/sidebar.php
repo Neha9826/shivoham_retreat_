@@ -79,7 +79,7 @@ include_once __DIR__ . '/../config.php';
                 <div class="collapse" id="about" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="<?= BASE_URL ?>addAbout.php">Add About</a>
-                        <a class="nav-link" href="<?= BASE_URL ?>allAbout.php">All About</a>
+                        <a class="nav-link" href="<?= BASE_URL ?>addAboutUs.php">Add About Us Page</a>
                     </nav>
                 </div>
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#gallery" aria-expanded="false" aria-controls="collapseLayouts">

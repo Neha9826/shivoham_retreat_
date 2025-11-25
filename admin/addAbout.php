@@ -181,7 +181,7 @@ $ADMIN_BASE_URL = '/admin/';
                 <?php while ($s = mysqli_fetch_assoc($aboutSliderRs)): ?>
                     <div class="col-md-3 mb-3" id="slider-card-<?= $s['id'] ?>">
                         <div class="card p-2 text-center">
-                            <img src="<?= $ADMIN_BASE_URL . htmlspecialchars($s['image']) ?>" class="img-fluid mb-2" style="max-height:100px;">
+                            <img src="<?= htmlspecialchars($s['image']) ?>" class="img-fluid mb-2" style="max-height:100px;">
                             <div class="d-flex gap-2 justify-content-center">
                                 <button class="btn btn-sm btn-outline-danger btn-delete-slider" data-id="<?= $s['id'] ?>">Delete</button>
                             </div>

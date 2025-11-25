@@ -63,7 +63,7 @@
 						<!-- </ul>
 					</div>
 				</li> -->
-				<li><a href="#contact" class="uk-navbar-nav-subtitle"><div>Contact<div class="uk-navbar-subtitle">Get in Touch</div></div></a></li>
+				<li><a href="contact.php" class="uk-navbar-nav-subtitle"><div>Contact<div class="uk-navbar-subtitle">Get in Touch</div></div></a></li>
 			</ul>
 			<!-- Navigation Items End -->
 
