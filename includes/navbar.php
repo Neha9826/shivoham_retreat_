@@ -50,19 +50,6 @@
 				<li><a href="activities.php" class="uk-navbar-nav-subtitle"><div>Activities<div class="uk-navbar-subtitle">Our Facilities</div></div></a></li>
 				<li><a href="gallery.php" class="uk-navbar-nav-subtitle"><div>Gallery<div class="uk-navbar-subtitle">Photos</div></div></a></li>
 				<li><a href="blog.php" class="uk-navbar-nav-subtitle"><div>Blog<div class="uk-navbar-subtitle">Latest News</div></div></a></li>
-				<!-- <li class="uk-parent">
-					<a href="#" class="uk-navbar-nav-subtitle"><div>Pages<div class="uk-navbar-subtitle">the Other Pages</div></div></a>
-					<div class="uk-navbar-dropdown">
-						<ul class="uk-nav uk-navbar-dropdown-nav"> -->
-							<!-- <li><a href="about.html">About Us</a></li>
-							<li><a href="testimonial.html">Testimonial</a></li>
-							<li><a href="blog.html">Blog</a></li>
-							<li><a href="single-post.html">Single Post</a></li> -->
-							<!-- <li><a href="gallery.php">Gallery</a></li> -->
-							<!-- <li><a href="element.html">Element</a></li> -->
-						<!-- </ul>
-					</div>
-				</li> -->
 				<li><a href="contact.php" class="uk-navbar-nav-subtitle"><div>Contact<div class="uk-navbar-subtitle">Get in Touch</div></div></a></li>
 			</ul>
 			<!-- Navigation Items End -->

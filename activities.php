@@ -26,6 +26,11 @@ function getImg($dbPath, $fallback) {
 <html>
 
 <head>
+    <!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <!-- Site Properties -->
 	<title>Shivoham Yoga Retreat</title>
 	<!-- <title>Shivoham Retreat | Cozy Homestay & Yoga Retreat Near Mussoorie Road, Dehradun</title> -->

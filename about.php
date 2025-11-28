@@ -21,6 +21,11 @@ function getImg($path) {
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Standard Meta -->
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <!-- Site Properties -->
 	<title>Shivoham Yoga Retreat</title>
 	<!-- <title>Shivoham Retreat | Cozy Homestay & Yoga Retreat Near Mussoorie Road, Dehradun</title> -->
@@ -40,22 +45,25 @@ function getImg($path) {
 </head>
 <body class="impx-body" id="top">
     
-    <header id="impx-header">
-        <div>
-            <div class="impx-menu-wrapper style2 hp2" data-uk-sticky="top: 0; animation: uk-animation-slide-top">
-                <?php include 'includes/moblileNav.php'; ?>
-                <?php include 'includes/topHeader.php'; ?>
-                <div class="uk-container uk-container-expand">
-                    <div data-uk-grid>
-                        <div class="uk-width-auto">
-                            <div class="impx-logo"><a href="index.php"><img src="images/Shivoham.png" class="logo" alt="Logo"></a></div>
+   <header id="impx-header">
+    <div>
+        <div class="impx-menu-wrapper style2 hp2" data-uk-sticky="top: 0; offset: 0; animation: uk-animation-slide-top">
+
+            <?php include 'includes/moblileNav.php'; ?>
+            <?php include 'includes/topHeader.php'; ?>
+            <div class="uk-container uk-container-expand">
+                <div data-uk-grid>
+                    <div class="uk-width-auto">
+                        <div class="impx-logo">
+                            <a href="index.php"><img src="images/Shivoham.png" class="logo" alt="Logo"></a>
                         </div>
-                        <?php include 'includes/navbar.php'; ?>
                     </div>
+                    <?php include 'includes/navbar.php'; ?>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
     <div class="impx-page-heading uk-position-relative about" style="margin-top: -142px; height: 180px; padding-top: 200px;">
         <div class="impx-overlay dark"></div>

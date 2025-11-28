@@ -21,7 +21,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
 <meta name="author" content="Shivoham Retreat">
 <meta name="robots" content="index, follow">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <meta name="geo.region" content="IN-UT">
 <meta name="geo.placename" content="Dehradun, Uttarakhand, India">
@@ -51,7 +50,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 	<!-- Standard Meta -->
 	<meta charset="utf-8">
 	<meta name="format-detection" content="telephone=no" />
-	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 

@@ -187,23 +187,26 @@ $waHref      = $plainPhone ? "https://wa.me/{$plainPhone}" : "#";
 
     <div class="new-footer-bottom">
         <div class="uk-container">
-            <div class="uk-text-center">
-                <div class="col-lg-3 col-md-6 mb-4">
-                    <div class="new-footer-col" >
-                        <h5 style="text-align: center;">Shivoham Retreat</h5> 
-                        <p>
-                            Experience the best <strong>luxury homestay in Dehradun</strong>. 
-                            Nestled near <strong>Robber's Cave</strong>, enjoy the beautiful panorama of 
-                            <strong>Mussoorie</strong> and the historic <strong>George Everest</strong> peak right from your balcony. 
-                            We offer a peaceful <strong>Himalayan retreat</strong> perfect for families and couples 
-                            seeking a scenic nature escape. Located conveniently near the iconic <strong>FRI</strong> 
-                            and the pristine streams of <strong>Maldevta</strong>, we promise an unforgettable stay in Uttarakhand.
-                        </p>
-                        <a href="about.php" class="line-button" style="text-align: center;">Read Our Story</a>
-                        <p class="copy_right" style="text-align: center;"> Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
-                    </div>
+            <div class="new-footer-col uk-width-1-1 uk-text-center">
+                
+                <h5 style="text-align: center;">Shivoham Retreat</h5> 
+                
+                <p style="max-width: 100%; margin: 0 auto 20px auto;">
+                    Experience the best <strong>luxury homestay in Dehradun</strong>. 
+                    Nestled near <strong>Robber's Cave</strong>, enjoy the beautiful panorama of 
+                    <strong>Mussoorie</strong> and the historic <strong>George Everest</strong> peak right from your balcony. 
+                    We offer a peaceful <strong>Himalayan retreat</strong> perfect for families and couples 
+                    seeking a scenic nature escape. Located conveniently near the iconic <strong>FRI</strong> 
+                    and the pristine streams of <strong>Maldevta</strong>, we promise an unforgettable stay in Uttarakhand.
+                </p>
+                
+                <div class="uk-margin-small-bottom">
+                    <a href="about.php" class="line-button" style="text-align: center;">Read Our Story</a>
                 </div>
+
+                <p class="copy_right" style="text-align: center;"> Copyright ©<script>document.write(new Date().getFullYear());</script> All rights reserved</p>
             </div>
+
         </div>
     </div>
 </footer>

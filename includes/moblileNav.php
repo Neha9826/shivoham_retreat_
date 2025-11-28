@@ -9,10 +9,11 @@
             <li class="uk-parent">
                 <a href="#rooms" class="uk-navbar-nav-subtitle">Rooms</a>
             </li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#activities">Activities</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="activities.php">Activities</a></li>
+            <li><a href="gallery.php">Gallery</a></li>
+            <li><a href="blog.php">Blog</a></li>
+            <li><a href="contact.php">Contact</a></li>
         </ul>
 
     </div>
