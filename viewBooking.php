@@ -177,7 +177,7 @@ $guestsAndChildren = $guestsText . ($booking['children'] > 0 ? ", " . $childrenT
 		            <!-- Mobile Nav End -->
 
 		            <!-- Top Header -->
-					<?php include 'includes/topHeader.php'; ?>
+					
 					<!-- Top Header End -->
 
 					<div class="uk-container uk-container-expand">

@@ -104,6 +104,19 @@ $waHref      = $plainPhone ? "https://wa.me/{$plainPhone}" : "#";
     .new-footer-col .reservation-links a:hover {
         color: #000000ff;
     }
+    /* MOBILE ONLY: Center align footer content */
+    @media (max-width: 767px) {
+        .new-footer-col {
+            text-align: center !important;
+            margin-bottom: 40px; /* Adds space between the stacked columns */
+        }
+        .new-footer-col h5 {
+            text-align: center;
+        }
+        .new-footer-col ul {
+            padding: 0;
+        }
+    }
 </style>
 
 

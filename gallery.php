@@ -17,6 +17,7 @@ $gallery_result = mysqli_query($conn, $q);
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <!-- Site Properties -->
 	<title>Shivoham Yoga Retreat</title>
 	<!-- <title>Shivoham Retreat | Cozy Homestay & Yoga Retreat Near Mussoorie Road, Dehradun</title> -->
@@ -42,7 +43,7 @@ $gallery_result = mysqli_query($conn, $q);
             <div class="impx-menu-wrapper style2 hp2" data-uk-sticky="top: .impx-slide-container; animation: uk-animation-slide-top">
 
                 <?php include 'includes/moblileNav.php'; ?>
-                <?php include 'includes/topHeader.php'; ?>
+                
                 <div class="uk-container uk-container-expand">
                     <div data-uk-grid>
                         <div class="uk-width-auto">

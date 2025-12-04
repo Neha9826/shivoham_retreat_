@@ -18,6 +18,7 @@ $contact_address = "Shivoham Retreat, Dehradun, Uttarakhand, India";
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Site Properties -->
 	<title>Shivoham Yoga Retreat</title>
 	<!-- <title>Shivoham Retreat | Cozy Homestay & Yoga Retreat Near Mussoorie Road, Dehradun</title> -->
@@ -43,7 +44,7 @@ $contact_address = "Shivoham Retreat, Dehradun, Uttarakhand, India";
             <div class="impx-menu-wrapper style2 hp2" data-uk-sticky="top: 0; animation: uk-animation-slide-top">
 
                 <?php include 'includes/moblileNav.php'; ?>
-                <?php include 'includes/topHeader.php'; ?>
+                
                 <div class="uk-container uk-container-expand">
                     <div data-uk-grid>
                         <div class="uk-width-auto">

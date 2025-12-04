@@ -383,7 +383,7 @@ if (!empty($all_rooms) && $room_id) {
 		            <!-- Mobile Nav End -->
 
 		            <!-- Top Header -->
-					<?php include 'includes/topHeader.php'; ?>
+					
 					<!-- Top Header End -->
 
 					<div class="uk-container uk-container-expand">

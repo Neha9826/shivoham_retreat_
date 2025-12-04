@@ -43,7 +43,7 @@
 						    	<!-- Slideshow Item #2 End -->
 
 						    	<!-- Slideshow Item #3 -->
-						    	<li>
+						    	<!-- <li>
 						    		<div class="uk-position-cover uk-animation-kenburns uk-animation-reverse uk-transform-origin-center-left">
 								    	<video src="video/banner.mp4" alt="" data-uk-cover>
 								    	<div class="uk-overlay-primary uk-position-cover impx-overlay dark"></div>
@@ -57,7 +57,7 @@
 								    		</div>
 								    	</div>
 							    	</div>
-						    	</li>
+						    	</li> -->
 						    	<!-- Slideshow Item #3 End -->
 
 						    	<!-- Slideshow Item #4 -->

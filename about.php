@@ -50,7 +50,7 @@ function getImg($path) {
         <div class="impx-menu-wrapper style2 hp2" data-uk-sticky="top: 0; offset: 0; animation: uk-animation-slide-top">
 
             <?php include 'includes/moblileNav.php'; ?>
-            <?php include 'includes/topHeader.php'; ?>
+            
             <div class="uk-container uk-container-expand">
                 <div data-uk-grid>
                     <div class="uk-width-auto">

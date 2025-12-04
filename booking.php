@@ -137,7 +137,7 @@ $meal_plan_names = [
 		            <!-- Mobile Nav End -->
 
 		            <!-- Top Header -->
-					<?php include 'includes/topHeader.php'; ?>
+					
 					<!-- Top Header End -->
 
 					<div class="uk-container uk-container-expand">

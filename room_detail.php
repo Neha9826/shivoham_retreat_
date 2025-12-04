@@ -280,7 +280,7 @@ $meal_plan_features = [
 		            <!-- Mobile Nav End -->
 
 		            <!-- Top Header -->
-					<?php include 'includes/topHeader.php'; ?>
+					
 					<!-- Top Header End -->
 
 					<div class="uk-container uk-container-expand">

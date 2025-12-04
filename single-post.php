@@ -69,6 +69,7 @@ $cnt_sql = "SELECT COUNT(*) as total FROM blog_comments WHERE blog_id = $id";
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Site Properties -->
 	<title>Shivoham Yoga Retreat</title>
 	<!-- <title>Shivoham Retreat | Cozy Homestay & Yoga Retreat Near Mussoorie Road, Dehradun</title> -->
@@ -99,7 +100,7 @@ $cnt_sql = "SELECT COUNT(*) as total FROM blog_comments WHERE blog_id = $id";
                 <!-- Mobile Nav End -->
 
                 <!-- Top Header -->
-                <?php include 'includes/topHeader.php'; ?>
+                
                 <!-- Top Header End -->
 
                 <div class="uk-container uk-container-expand">
