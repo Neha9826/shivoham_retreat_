@@ -1,3 +1,10 @@
+<style>
+    /* Mobile Nav Background Override */
+    #mobile-nav .uk-offcanvas-bar {
+        background-color: #018a8a !important;
+    }
+</style>
+
 <div id="mobile-nav" data-uk-offcanvas="mode: push; overlay: true">
     <div class="uk-offcanvas-bar">
 
