@@ -119,8 +119,6 @@ $waHref      = $plainPhone ? "https://wa.me/{$plainPhone}" : "#";
     }
 </style>
 
-
-
 <footer class="new-footer">
     <div class="footer-top">
         <div class="uk-container">
